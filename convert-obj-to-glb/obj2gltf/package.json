@@ -1,0 +1,61 @@
+{
+  "name": "obj2gltf",
+  "version": "3.1.0",
+  "description": "Convert OBJ model format to glTF",
+  "license": "Apache-2.0",
+  "contributors": [
+    {
+      "name": "Cesium GS, Inc. and Contributors",
+      "url": "https://github.com/CesiumGS/obj2gltf/graphs/contributors"
+    }
+  ],
+  "keywords": [
+    "obj",
+    "gltf"
+  ],
+  "homepage": "https://github.com/CesiumGS/obj2gltf",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CesiumGS/obj2gltf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CesiumGS/obj2gltf/issues"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cesium": "^1.71.0",
+    "fs-extra": "^9.0.1",
+    "jpeg-js": "^0.4.1",
+    "mime": "^2.4.6",
+    "pngjs": "^5.0.0",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "cloc": "^2.5.1",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-cesium": "^8.0.1",
+    "gulp": "^4.0.2",
+    "jasmine": "^3.6.1",
+    "jasmine-spec-reporter": "^5.0.2",
+    "jsdoc": "^3.6.5",
+    "nyc": "^15.1.0",
+    "open": "^7.1.0"
+  },
+  "scripts": {
+    "jsdoc": "jsdoc ./lib -R ./README.md -d doc",
+    "eslint": "eslint \"./**/*.js\" --cache --quiet",
+    "test": "gulp test",
+    "test-watch": "gulp test-watch",
+    "coverage": "gulp coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "cloc": "gulp cloc"
+  },
+  "bin": {
+    "obj2gltf": "./bin/obj2gltf.js"
+  }
+}

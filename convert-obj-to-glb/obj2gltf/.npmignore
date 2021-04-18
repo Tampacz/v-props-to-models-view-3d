@@ -1,0 +1,16 @@
+/.idea
+/coverage
+/doc/*
+/specs
+/test
+.editorconfig
+.eslintcache
+.eslintignore
+.eslintrc.json
+.gitattributes
+.nyc_output
+.npmignore
+.travis.yml
+gulpfile.js
+*.tgz
+!doc/cesium.png
