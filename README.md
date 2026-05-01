@@ -1,3 +1,15 @@
+# ⚠️ Discontinued
+
+  This project is no longer maintained.
+
+  **Please use the new, improved replacement:** [v-drawable-to-glb](https://github.com/gtax-dev/v-drawable-to-glb)
+
+  It is free to use, works better, and is actively maintained.
+
+  ---
+  
+
+  
 Build video example:
 https://www.youtube.com/watch?v=Y9lL2vC9YDw
 
